@@ -1,0 +1,56 @@
+{
+    "identityPoolName": "unlessidentity",
+    "allowUnauthenticatedIdentities": true,
+    "thirdPartyAuth": false,
+    "lambdaLogPolicy": "unlesscognito_lambda_log_policy",
+    "openIdLambdaRoleName": "unlesscognito_openid_lambda_role",
+    "openIdRolePolicy": "unlesscognito_openid_pass_role_policy",
+    "openIdLambdaIAMPolicy": "unlesscognito_openid_lambda_iam_policy",
+    "openIdLogPolicy": "unlesscognito_openid_lambda_log_policy",
+    "userPoolName": "unlesscognito-userpool",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "roleName": "unlesscognito_sns-role",
+    "roleExternalId": "unlesscognito_role_external_id",
+    "policyName": "unlesscognito-sns-policy",
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [
+        "Requires Lowercase",
+        "Requires Numbers",
+        "Requires Symbols"
+    ],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientName": "unlesscognito_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "mfaLambdaRole": "unlesscognito_totp_lambda_role",
+    "mfaLambdaLogPolicy": "unlesscognito_totp_lambda_log_policy",
+    "mfaPassRolePolicy": "unlesscognito_totp_pass_role_policy",
+    "mfaLambdaIAMPolicy": "unlesscognito_totp_lambda_iam_policy",
+    "userpoolClientLambdaRole": "unlesscognito_userpoolclient_lambda_role",
+    "userpoolClientLogPolicy": "unlesscognito_userpoolclient_lambda_log_policy",
+    "userpoolClientLambdaPolicy": "unlesscognito_userpoolclient_lambda_iam_policy",
+    "userpoolClientSetAttributes": false,
+    "useDefault": "manual",
+    "authSelections": "identityPoolAndUserPool",
+    "resourceName": "unlesscognito",
+    "unAuthRoleName": "unless-20181016150514-unauthRole",
+    "authRoleName": "unless-20181016150514-authRole",
+    "unAuthRoleArn": "arn:aws:iam::524345796801:role/unless-20181016150514-unauthRole",
+    "authRoleArn": "arn:aws:iam::524345796801:role/unless-20181016150514-authRole"
+}

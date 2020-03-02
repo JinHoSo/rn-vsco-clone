@@ -1,0 +1,8 @@
+enum ActionTypes {
+  UPSERT_FILTER = 'UPSERT_FILTER',
+  DELETE_FILTER = 'DELETE_FILTER',
+  CLEAR_FILTER  = 'CLEAR_FILTER',
+  RESET_FILTER  = 'RESET_FILTER'
+}
+
+export default ActionTypes

@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Unless",
+    "description": "unless filter app",
+    "slug": "unless",
+    "privacy": "unlisted",
+    "sdkVersion": "29.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*",
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "today.unless.release",
+      "publishBundlePath": "ios/unless/Supporting/shell-app.bundle",
+      "publishManifestPath": "ios/unless/Supporting/shell-app-manifest.json"
+    },
+    "isDetached": true,
+    "detach": {
+      "iosExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/ios-v2.7.8-sdk29.0.0-02bd60c8-f134-4f5e-b5c0-1898ffb57231.tar.gz",
+      "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v2.7.2-sdk29.0.0-54e8f46d-36a6-460f-b0f9-e1043f28b215.tar.gz"
+    },
+    "scheme": "expf4cc9aeb0eda402abcd9ba99f041a57c",
+    "android": {
+      "package": "today.unless.release",
+      "publishBundlePath": "android/app/src/main/assets/shell-app.bundle",
+      "publishManifestPath": "android/app/src/main/assets/shell-app-manifest.json"
+    },
+    "packagerOpts": {
+      "assetExts": [
+        "ttf",
+        "mp4"
+      ],
+      "sourceExts": [
+        "ts",
+        "tsx"
+      ],
+      "transformer": "node_modules/react-native-typescript-transformer/index.js"
+    }
+  }
+}

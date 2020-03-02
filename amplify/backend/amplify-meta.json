@@ -1,0 +1,62 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "unless-20181019143044-authRole",
+      "UnauthRoleArn": "arn:aws:iam::524345796801:role/unless-20181019143044-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::524345796801:role/unless-20181019143044-authRole",
+      "Region": "ap-northeast-2",
+      "DeploymentBucketName": "unless-20181019143044-deployment",
+      "UnauthRoleName": "unless-20181019143044-unauthRole",
+      "StackName": "unless-20181019143044",
+      "StackId": "arn:aws:cloudformation:ap-northeast-2:524345796801:stack/unless-20181019143044/209818c0-d360-11e8-9bcb-50a68ae79cfe"
+    }
+  },
+  "auth": {
+    "unlessOnAmplify": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/unless-20181019143044-deployment/amplify-cfn-templates/auth/unlessOnAmplify-cloudformation-template.yml",
+        "logicalId": "authunlessOnAmplify"
+      },
+      "lastPushTimeStamp": "2018-10-19T07:54:02.082Z",
+      "output": {
+        "AppClientSecret": "b7bhbfg074a9vutcc1du41goa9qtcugqulcpah9sm5rf4ndqf9b",
+        "UserPoolId": "ap-northeast-2_3WuWBv4la",
+        "AppClientIDWeb": "7jk0e13cg9ls1cmrlfe1rour1e",
+        "AppClientID": "4ko019ipgr95jde8sk87bt5pvg",
+        "IdentityPoolId": "ap-northeast-2:64f1c880-4bff-425f-92e7-4c88e738e11a",
+        "IdentityPoolName": "unlessOnAmplify",
+        "UserPoolName": "unlessOnAmplify"
+      },
+      "lastPushDirHash": "iqLW4Tonq5vjyJpXZO145xlX5jM="
+    }
+  },
+  "storage": {
+    "unlessOnAmplify": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/unless-20181019143044-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+        "logicalId": "storageunlessOnAmplify"
+      },
+      "lastPushTimeStamp": "2018-10-19T07:54:02.082Z",
+      "output": {
+        "BucketName": "unlessonamplify",
+        "Region": "ap-northeast-2"
+      },
+      "lastPushDirHash": "8A23Cb45oYCCD7S5IXPhUoxZY1E="
+    }
+  },
+  "api": {
+    "unless-api": {
+      "service": "AppSync",
+      "output": {
+        "securityType": "AMAZON_COGNITO_USER_POOLS",
+        "GraphQLAPIIdOutput": "4e5g7cy76fgctglgtlzik2c2sa",
+        "GraphQLAPIEndpointOutput": "https://vnbnwegk5fhw5j24hkhtxwpmbm.appsync-api.ap-northeast-2.amazonaws.com/graphql"
+      },
+      "lastPushTimeStamp": "2018-10-21T09:17:22.245Z"
+    }
+  }
+}
